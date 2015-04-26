@@ -6,7 +6,7 @@ public class Planification {
 	
 	public List Planification(List l){
 	
-		while () 
+		while ()  
 		return l;
 		
 	} 
