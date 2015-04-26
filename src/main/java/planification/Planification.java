@@ -1,5 +1,6 @@
 package planification;
 
+import java.util.Date;
 import java.util.List;
 
 import model.Doctor;
@@ -7,7 +8,9 @@ import model.Doctor;
 public class Planification implements IPlanification{
 
 	public int minPlanification(List<Doctor> l) {
-		// TODO Auto-generated method stub
+		for(Doctor d : l){
+			for(Date l : d.get)
+		}
 		return 0;
 	}
 
@@ -16,10 +19,12 @@ public class Planification implements IPlanification{
 		return 0;
 	}
 
-	public List<Doctor> planification(List<Doctor> l) {
+	public List<Doctor> planification(List<Doctor> l, java.sql.Date dateDebut,
+			java.sql.Date dateFin) {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
+	
  
 }
