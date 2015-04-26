@@ -15,6 +15,7 @@ import service.PlanningGardeService;
 
 public class PlanningGardeServiceTest {
 
+/*
 	@Test(expected = ImpossibleToPlan.class)
 	public void test_generatePlanningGarde_CaseZeroDoctorAndOneDayPeriod() throws ImpossibleToPlan {
 		//Init input
@@ -28,7 +29,8 @@ public class PlanningGardeServiceTest {
 		
 		// Assertion
 	}
-	
+	*/
+	/*
 	@Test
 	public void test_generatePlanningGarde_CaseOneDoctorAndOneDayPeriod() throws ImpossibleToPlan {
 		//Init input
@@ -45,6 +47,7 @@ public class PlanningGardeServiceTest {
 		assertEquals(1, planningGarde.getPlanning().size());
 		//assertEquals("Mohamed", planningGarde.getPlanning().get(new Date()).getName());
 	}
+	*/
 	
 	
 

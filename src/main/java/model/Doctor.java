@@ -11,15 +11,15 @@ public class Doctor
 	private String cin ;
 	private String photo ;
 	private List<Date> holidays;
-	private List<Date> preferece;
+	private List<Date> preferences;
     
-	public Doctor(String name, String lastname, String cin, List<Date> holidays,List<Date> preference) {
+	public Doctor(String name, String lastname, String cin, List<Date> holidays,List<Date> preferences) {
 		super();
 		this.name = name;
 		this.lastname = lastname;
 		this.cin = cin;
 		this.holidays = holidays;
-		this.preferece=preference ;
+		this.setPreferences(preferences);
 	}
 	// Getters & Setters
 	public String getName() {
@@ -52,11 +52,12 @@ public class Doctor
 	public void setPhoto(String photo) {
 		this.photo = photo;
 	}
-	public List<Date> getPreferece() {
-		return preferece;
+
+	public List<Date> getPreferences() {
+		return preferences;
 	}
-	public void setPreferece(List<Date> preferece) {
-		this.preferece = preferece;
+	public void setPreferences(List<Date> preferences) {
+		this.preferences = preferences;
 	}
 	
 }
