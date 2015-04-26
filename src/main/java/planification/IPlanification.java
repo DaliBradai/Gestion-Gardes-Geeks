@@ -5,7 +5,7 @@ import java.util.List;
 import model.*;
 
 public interface IPlanification {
-	public int minPlanification(List<Doctor> l);
+	public Indice minPreference(List<Doctor> l,Date dateDebut, Date dateFin);
 	public float quotion(List<Doctor> l);
 	public List<Doctor> planification(List<Doctor> l,Date dateDebut, Date dateFin);
 
