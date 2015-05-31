@@ -39,6 +39,7 @@ public class AjoutMedecin extends JFrame {
 		setContentPane(contentPane);
 	}
 	
+
 	
 	
 

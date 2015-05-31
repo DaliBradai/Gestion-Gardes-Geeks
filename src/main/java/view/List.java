@@ -199,6 +199,8 @@ public class List extends JFrame {
 		contentPane.add(lblText);
 	}
 	
+
+	
 	
 	
 }
