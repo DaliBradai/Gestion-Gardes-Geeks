@@ -1,7 +1,9 @@
 package model;
 
+import java.util.Collection;
 import java.util.Date;
 import java.util.List;
+import java.util.Set;
 
 public class Doctor 
 {
@@ -14,11 +16,12 @@ public class Doctor
 	private  int tel2 ;
 	private String email ;
 	private String adresse ;
+	private String status;
 	
 	private List<Date> holidays;
-	private List<Date> preferences;
+	private List<Integer> preferences;
     
-	public Doctor(String name, String lastname, String cin,int tel1,int tel2,String email, String adresse,List<Date> holidays,List<Date> preferences) {
+	public Doctor(String name, String lastname, String cin,int tel1,int tel2,String email, String adresse,List<Date> holidays,List<Integer> preferences,String status) {
 		super();
 		this.name = name;
 		this.lastname = lastname;
@@ -26,9 +29,10 @@ public class Doctor
 		this.tel1=tel1 ;
 		this.tel2=tel2 ;
 		this.email=email ;
+		this.status=status ;
 		this.adresse=adresse ;
 		this.holidays = holidays;
-		this.setPreferences(preferences);
+		this.preferences=preferences;
 	}
 	public int getTel1() {
 		return tel1;
@@ -81,10 +85,17 @@ public class Doctor
 	}
 
 
-	public List<Date> getPreferences() {
+
+	public List<Integer> getPreferences() {
 		return preferences;
 	}
-	public void setPreferences(List<Date> preferences) {
+	public String getStatus() {
+		return status;
+	}
+	public void setStatus(String status) {
+		this.status = status;
+	}
+	public void setPreferences(List<Integer> preferences) {
 		this.preferences = preferences;
 	}
 	
