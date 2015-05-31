@@ -198,4 +198,7 @@ public class List extends JFrame {
 		lblText.setBounds(11, 380, 466, 14);
 		contentPane.add(lblText);
 	}
+	
+	
+	
 }

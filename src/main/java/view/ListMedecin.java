@@ -126,4 +126,7 @@ public class ListMedecin extends JFrame {
 		panel_3.add(button_1);
 		button_1.setIcon(new ImageIcon("D:\\mes secrets\\Documents\\Cyle d'ingenieur\\2ème année\\2ème semestre\\Agile\\workshop\\drop-add.gif"));
 	}
+	
+	
+	
 }
