@@ -17,6 +17,7 @@ import java.awt.Font;
 
 import javax.swing.JButton;
 import javax.swing.ImageIcon;
+import java.awt.FlowLayout;
 
 public class ListMedecin extends JFrame {
 
@@ -52,7 +53,7 @@ public class ListMedecin extends JFrame {
 		
 		JPanel panel = new JPanel();
 		panel.setLayout(null);
-		panel.setBounds(10, 82, 467, 318);
+		panel.setBounds(10, 123, 467, 277);
 		contentPane.add(panel);
 		
 		table = new JTable();
@@ -81,7 +82,7 @@ public class ListMedecin extends JFrame {
 			table.getColumnModel().getColumn(1).setPreferredWidth(191);
 			table.getColumnModel().getColumn(2).setPreferredWidth(100);
 			table.getColumnModel().getColumn(3).setPreferredWidth(103);
-			table.setBounds(0, 0, 467, 318);
+			table.setBounds(0, 0, 467, 275);
 			panel.add(table);
 		
 		JPanel panel_1 = new JPanel();
@@ -93,11 +94,6 @@ public class ListMedecin extends JFrame {
 		button.setIcon(new ImageIcon("D:\\mes secrets\\Documents\\Cyle d'ingenieur\\2ème année\\2ème semestre\\Agile\\workshop\\drop-no.gif"));
 		button.setBounds(378, 0, 89, 23);
 		panel_1.add(button);
-		
-		JButton button_1 = new JButton("Ajouter");
-		button_1.setIcon(new ImageIcon("D:\\mes secrets\\Documents\\Cyle d'ingenieur\\2ème année\\2ème semestre\\Agile\\workshop\\drop-add.gif"));
-		button_1.setBounds(285, 0, 89, 23);
-		panel_1.add(button_1);
 		
 		JPanel panel_2 = new JPanel();
 		panel_2.setLayout(null);
@@ -111,6 +107,23 @@ public class ListMedecin extends JFrame {
 		label.setFont(new Font("Tahoma", Font.BOLD, 17));
 		label.setBounds(10, 0, 296, 71);
 		panel_2.add(label);
+		
+		JPanel panel_3 = new JPanel();
+		FlowLayout flowLayout = (FlowLayout) panel_3.getLayout();
+		flowLayout.setAlignment(FlowLayout.RIGHT);
+		panel_3.setBounds(10, 74, 467, 38);
+		contentPane.add(panel_3);
+		
+		JButton button_2 = new JButton("Supprimer");
+		button_2.setIcon(new ImageIcon("D:\\mes secrets\\Documents\\Cyle d'ingenieur\\2ème année\\2ème semestre\\Agile\\workshop\\delete.gif"));
+		panel_3.add(button_2);
+		
+		JButton button_3 = new JButton("Modifier");
+		button_3.setIcon(new ImageIcon("D:\\mes secrets\\Documents\\Cyle d'ingenieur\\2ème année\\2ème semestre\\Agile\\workshop\\edit.gif"));
+		panel_3.add(button_3);
+		
+		JButton button_1 = new JButton("Ajouter");
+		panel_3.add(button_1);
+		button_1.setIcon(new ImageIcon("D:\\mes secrets\\Documents\\Cyle d'ingenieur\\2ème année\\2ème semestre\\Agile\\workshop\\drop-add.gif"));
 	}
-
 }
